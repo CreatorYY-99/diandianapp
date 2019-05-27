@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.slatejack.diandianapp">
-<uses-permission android:name="android.permission.INTERNET"/>//设置网络权限
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,24 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        >
-        <activity android:name=".MainActivity">
+        android:usesCleartextTraffic="true">
+        <activity android:name=".questiontable"></activity>
+        <activity android:name=".main3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".cctv1" />
-        <activity android:name=".cctv1HD" />
-        <activity android:name=".cctv2HD" />
-        <activity android:name=".cctv3" />
-        <activity android:name=".cctv3HD" />
-        <activity android:name=".cctv4" />
-        <activity android:name=".cctv4HD" />
-        <activity android:name=".cctv5" />
-        <activity android:name=".cctv5HD"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".cctv1"
+            android:label="测试" />
+        <activity
+            android:name=".cctv1HD"
+            android:label="CCTV1_HD" />
+        <activity
+            android:name=".cctv2HD"
+            android:label="CCTV2_HD" />
+        <activity
+            android:name=".cctv3"
+            android:label="CCTV3" />
+        <activity
+            android:name=".cctv3HD"
+            android:label="CCTV3_HD" />
+        <activity
+            android:name=".cctv4"
+            android:label="CCTV4" />
+        <activity
+            android:name=".cctv4HD"
+            android:label="CCTV4_HD" />
+        <activity
+            android:name=".cctv5"
+            android:label="CCTV5" />
+        <activity
+            android:name=".cctv5HD"
+            android:label="CCTV5_HD" />
     </application>
 
 </manifest>
